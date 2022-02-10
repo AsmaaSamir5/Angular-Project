@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.ful{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    background-color:white;
+    border: 1px solid rgb(66, 63, 63);
+}
+
+tr:nth-child(1){
+ left: 30%;
+  width: 200px;
+  left: 5%;
+}
+
+.TBL{
+position: absolute;
+left: 450px;
+}

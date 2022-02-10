@@ -1,0 +1,27 @@
+
+
+<div class="ful">
+  <br>
+  <br>
+  <div class="input-group mb-3">
+    <input class="form-control me-2" type="text" #username placeholder="Enter New todo..."
+    aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">
+    <input class="btn btn-danger" type="button" value="Create"  (click)="adduser(username.value)"><br>
+  </span>
+  </div>
+  <div class="input-group mb-3"><b>Todo List  &nbsp;</b>
+    <input class="form-control me-2" type="text" placeholder="Filter" #filter (input)="search(filter.value)"
+    aria-label="Recipient's username" aria-describedby="basic-addon2">
+  </div>
+  <br> <br>
+    <div  class="tb">
+        <table  class="table-primary">
+            <tr value="user" *ngFor="let user of usr2">{{user}}
+                <input class="btn btn-danger TBL" type="button" value="Delete" (click)="remov(username.value)"><br>
+                <br>
+            </tr><br/>
+        </table>
+    </div>
+</div>
+

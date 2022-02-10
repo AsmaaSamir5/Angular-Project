@@ -1,0 +1,12 @@
+<div class="row">
+
+  <app-product-card [product]="product" *ngFor="let product of products"
+  (getFavProduct)="print($event)"
+  class="col-md-4"></app-product-card>
+
+<div class="col-md-6">
+  <h1>Favorites</h1>
+  <app-favorite-product [favoriteproducts]="favoriteProducts"></app-favorite-product>
+
+</div>
+</div>

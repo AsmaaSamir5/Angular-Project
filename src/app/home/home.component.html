@@ -1,0 +1,21 @@
+
+<span class="hm">
+
+    <p>home works!</p>
+    <h2>NgFor (Grouped)</h2>
+    <h2>NgSwitch</h2> <br>
+    
+    
+    <ul>
+        <li *ngFor="let item of peopleByCountry" [ngSwitch] ="item.country">
+            <p *ngSwitchCase = "'UK'" class="text-primary">{{item.country}}</p>
+            <p *ngSwitchCase = "'US'" class="text-danger">{{item.country}}</p>
+            <p *ngSwitchCase = "'MARS'" class="text-success">{{item.country}}</p>
+            <ul>
+                <li *ngFor = "let person of item.people; let i = index"> {{i+1}}- {{person.name}}</li>
+            </ul>
+        </li>
+    </ul>
+    
+</span>
+    

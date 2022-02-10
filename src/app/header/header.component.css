@@ -1,0 +1,8 @@
+.head{
+    border: 2px solid black;
+    width: 350;
+    padding: 1px;
+    margin: 10px;
+    padding-bottom: 2px;
+    background-color: darkseagreen;
+}
